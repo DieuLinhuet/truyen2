@@ -59,9 +59,6 @@ Then(/^I should be on "([^"]*)" page$/) do |arg|
     current_path == theloai_path(1)
   elsif arg == "Truyện ngụ ngôn"
     current_path == theloai_path(2)
-  elsif arg == "Truyện Cổ Tích"
-    current_path == theloai_path(3)
-  elsif arg == "Đăng Nhập"
-    current_path == login_path
+    else current_path == theloai_path(3)
   end
 end
